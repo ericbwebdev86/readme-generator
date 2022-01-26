@@ -126,6 +126,20 @@ const init = () => {
         }
     ])
 };
-
+//function to generate README.md file with fs
+const writeRM = data => {
+    fs.writeFile('./output/README.md', data, err => {
+        if (err) throw new Error(err);
+        console.log('Your README.md file has been created! You can find it in the output folder.');
+    })
+}
 // Function call to initialize app
-init().then(answers => console.log(answers));
+init()
+    .then(answers => {
+        return genMD(answers);
+    })
+    .then(data => {
+        return writeRM(data);
+    }).catch(err => {
+        console.log(err);
+    });
