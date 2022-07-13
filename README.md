@@ -3,17 +3,22 @@
 
   ## Table of Contents
   1. [Description](#description)
-  2. [Installation](#installation)
-  3. [Usage](#usage)
-  4. [Credits](#credits)
-  5. [Test](#test)
-  6. [Contact](#contact)
-  7. [License](#license)
+  2. [Tech Used](#Tech-Used)
+  3. [Installation](#installation)
+  4. [Usage](#usage)
+  5. [Credits](#credits)
+  6. [Test](#test)
+  7. [Contact](#contact)
+  8. [License](#license)
   
 
   ## Description
   This app quickly and easily generates a professional README.md file. This project uses node.JS and inquirer to capture user input via command line, and node's file system module to generate the README.md.
 
+## Tech Used
+* javascript
+* nodejs
+* inquirer
 
   ## Installation
   Clone the code from https://github.com/ericbwebdev86/readme-generator and run npm install to download the dependencies.
